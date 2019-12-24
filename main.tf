@@ -1,12 +1,12 @@
 //--------------------------------------------------------------------
+// Variables
+variable "failedtemp_prefix" {}
+
+//--------------------------------------------------------------------
 // Modules
-variable "x" {}
-provider "azurerm" {
-  client_id = "${var.x}"
-}
-module "ani" {
-  source  = "app.terraform.io/cmporg/ani/azure"
+module "failedtemp" {
+  source  = "app.terraform.io/cmporg/failedtemp/azure"
   version = "1.0.1"
 
-  resource_group_name = "ashokrg"
+  prefix = "${var.failedtemp_prefix}"
 }
