@@ -1,13 +1,12 @@
 //--------------------------------------------------------------------
 // Variables
 variable "failedtemp_prefix" {}
-// variable "failedtemp_prefix1" {}
 
 //--------------------------------------------------------------------
 // Modules
 module "failedtemp" {
   source  = "app.terraform.io/cmporg/failedtemp/azure"
-  version = "1.0.4"
+  version = "1.0.5"
 
   prefix = "${var.failedtemp_prefix}"
 }
