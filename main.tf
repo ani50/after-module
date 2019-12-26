@@ -1,7 +1,7 @@
 //--------------------------------------------------------------------
 // Variables
 variable "failedtemp_prefix" {}
-variable "failedtemp_prefix1" {}
+// variable "failedtemp_prefix1" {}
 
 //--------------------------------------------------------------------
 // Modules
